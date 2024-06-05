@@ -1,0 +1,43 @@
+@import "../../app.scss";
+
+.typewriter {
+    position: relative;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    /* border: 1px solid; */
+    height: 100px; /* Adjust height as needed */
+  }
+  
+  .typewriter-text {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 100px;
+     border-radius: 40px;
+
+     @include mobile{
+     padding-bottom:0px;
+    }
+    
+  }
+  
+  .word {
+    display: inline-block;
+  }
+  
+  .slide-in {
+    animation: slide-in 0.5s forwards;
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
