@@ -9,7 +9,7 @@ const items = [
     description:
       "Beebah App is a radio app specialized in posting Beebah radio content ,selling of concert ticket, renting of instruments ,provision of ushers and Actiors",
     img: "./BeebahRadio.png",
-    link: "https://mikkeytech-portfolio.onrender.com/",
+    link: "https://beebahradiofn.onrender.com/?index",
   },
   {
     id: 2,
@@ -54,9 +54,9 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.description}</p>
-            <button>
-              <a href={item.link}>See demo</a>
-            </button>
+            <a href={item.link} target="_blank">
+              <button>See demo</button>
+            </a>
           </motion.div>
         </div>
       </div>
