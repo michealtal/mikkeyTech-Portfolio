@@ -9,6 +9,7 @@ const items = [
     description:
       "Beebah App is a radio app specialized in posting Beebah radio content ,selling of concert ticket, renting of instruments ,provision of ushers and Actiors",
     img: "./BeebahRadio.png",
+    link: "https://mikkeytech-portfolio.onrender.com/",
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ const items = [
     description:
       "Medix app is medical app also know as a mobile hospitle which made it easy for patients to reach out to doctors on time and even select doctors they want for their treatment",
     img: "./medix.png",
+    link: "#",
   },
   {
     id: 3,
@@ -23,13 +25,15 @@ const items = [
     description:
       "Dice Game is a Dice game with Two dice which give you random number as you Click on a button and it decide the winner by the dice with the higest number it main purpose id to help siblings negotiate isuues and solve argument",
     img: "./diceGame.png",
+    link: "#",
   },
   {
     id: 4,
     title: "Budget App",
     description:
       "music app is a random music app that on key press  it play the instrument or on mouse click it is fun fun kids and allows them to rest and pass time",
-    img: "./budgeticon.png",
+    img: "./budgetIcon.png",
+    link: "#",
   },
 ];
 
@@ -50,7 +54,9 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.description}</p>
-            <button>See Demo</button>
+            <button>
+              <a href={item.link}>See demo</a>
+            </button>
           </motion.div>
         </div>
       </div>
