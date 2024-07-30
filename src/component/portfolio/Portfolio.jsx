@@ -13,7 +13,6 @@ const items = [
   },
   {
     id: 2,
-<<<<<<< HEAD
     title: "Pay-pal clone",
     description:
       "this is a stactic pay-pal clone website for banking and payment",
@@ -52,30 +51,6 @@ const items = [
     img: "./social-plus.png",
     link: "https://socialplusclass.onrender.com",
   },
-=======
-    title: "Medix",
-    description:
-      "Medix app is medical app also know as a mobile hospitle which made it easy for patients to reach out to doctors on time and even select doctors they want for their treatment",
-    img: "./medix.png",
-    link: "#",
-  },
-  {
-    id: 3,
-    title: "Dice Game",
-    description:
-      "Dice Game is a Dice game with Two dice which give you random number as you Click on a button and it decide the winner by the dice with the higest number it main purpose id to help siblings negotiate isuues and solve argument",
-    img: "./diceGame.png",
-    link: "#",
-  },
-  {
-    id: 4,
-    title: "Budget App",
-    description:
-      "music app is a random music app that on key press  it play the instrument or on mouse click it is fun fun kids and allows them to rest and pass time",
-    img: "./budgetIcon.png",
-    link: "#",
-  },
->>>>>>> e6621e7d50b3aae05e53e2f71652ab0736d1d851
 ];
 
 const Single = ({ item }) => {
@@ -96,11 +71,7 @@ const Single = ({ item }) => {
             <h2>{item.title}</h2>
             <p>{item.description}</p>
             <a href={item.link} target="_blank">
-<<<<<<< HEAD
               <button>See Demo</button>
-=======
-              <button>See demo</button>
->>>>>>> e6621e7d50b3aae05e53e2f71652ab0736d1d851
             </a>
           </motion.div>
         </div>
