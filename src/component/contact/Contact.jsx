@@ -122,9 +122,9 @@ const Contact = () => {
         </motion.form>
       </div>
 
-      <Button onClick={onOpen}>Trigger modal</Button>
+      {/* <Button onClick={onOpen}>Trigger modal</Button> */}
 
-      <div className="modal">
+      {/* <div className="modal">
         <Modal onClose={onClose} isOpen={isOpen}>
           <ModalOverlay />
           <ModalContent>
@@ -141,7 +141,7 @@ const Contact = () => {
             </ModalFooter>
           </ModalContent>
         </Modal>
-      </div>
+      </div> */}
     </motion.div>
   );
 };
