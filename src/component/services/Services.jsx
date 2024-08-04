@@ -2,6 +2,53 @@ import { useRef } from "react";
 import "./services.scss";
 import { motion, useInView } from "framer-motion";
 
+const Technologies = [
+  {
+    id: "1",
+    title: "html",
+    img: "./html.png",
+  },
+  {
+    id: "2",
+    img: "./css.png",
+    title: "css",
+  },
+  {
+    id: "3",
+    img: "./javaScript.png",
+    title: "javascript",
+  },
+  {
+    id: "4",
+    img: "./typescript.png",
+    title: "type script",
+  },
+  {
+    id: "5",
+    img: "./tailwind.png",
+    title: "tailwind",
+  },
+  {
+    id: "6",
+    img: "./react.png",
+    title: "react",
+  },
+  {
+    id: "7",
+    img: "./nodeJS.png",
+    title: "node js",
+  },
+  {
+    id: "8",
+    img: "./express.png",
+    title: "express",
+  },
+  {
+    id: "9",
+    img: "./mongoDB.png",
+    title: "mongoDB",
+  },
+];
 const varients = {
   initial: {
     x: -500,
@@ -44,67 +91,25 @@ const Services = () => {
           <img src="./people.webp" alt="" />
           <h1>
             {" "}
-            <motion.b whileHover={{ color: "orange" }}>Unique</motion.b> Ideas
+            <motion.b whileHover={{ color: "orange" }}>Unique</motion.b>{" "}
+            Technologies
           </h1>
         </div>
         <div className="title">
           <h1>
             {" "}
-            <motion.b whileHover={{ color: "orange" }}>For Your</motion.b>{" "}
-            Business
+            <motion.b whileHover={{ color: "orange" }}> I Use</motion.b> In
+            Building
           </h1>
-          <button>WHAT WE DO?</button>
+          <button>WHAT WE USE?</button>
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={varients}>
-        <motion.div
-          className="box"
-          whileHover={{ backgroundColor: "lightgray", color: "black" }}
-        >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nisi
-            placeat rem maiores asperiores quibusdam suscipit ipsa nesciunt
-            cupiditate tempore!
-          </p>
-          <button>Go</button>
-        </motion.div>
-        <motion.div
-          className="box"
-          whileHover={{ backgroundColor: "lightgray", color: "black" }}
-        >
-          <h2>Marketing</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nisi
-            placeat rem maiores asperiores quibusdam suscipit ipsa nesciunt
-            cupiditate tempore!
-          </p>
-          <button>Go</button>
-        </motion.div>
-        <motion.div
-          className="box"
-          whileHover={{ backgroundColor: "lightgray", color: "black" }}
-        >
-          <h2>Web App</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nisi
-            placeat rem maiores asperiores quibusdam suscipit ipsa nesciunt
-            cupiditate tempore!
-          </p>
-          <button>Go</button>
-        </motion.div>
-        <motion.div
-          className="box"
-          whileHover={{ backgroundColor: "lightgray", color: "black" }}
-        >
-          <h2>Strategies</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nisi
-            placeat rem maiores asperiores quibusdam suscipit ipsa nesciunt
-            cupiditate tempore!
-          </p>
-          <button>Go</button>
-        </motion.div>
+        {Technologies.map((tech) => (
+          <motion.div className="box">
+            <img src={tech.img} alt="tech.title" />
+          </motion.div>
+        ))}
       </motion.div>
     </motion.div>
   );
