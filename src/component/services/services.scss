@@ -6,6 +6,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @include mobile {
+    overflow-x: hidden;
+  }
 
   .textContainer {
     flex: 1;
@@ -107,7 +110,7 @@
     @include mobile {
       flex: 0.4;
       flex-wrap: wrap;
-      flex-direction: row;
+
       width: 90%;
     }
     .box {
@@ -117,16 +120,21 @@
       justify-content: space-between;
 
       @include mobile {
-        border: none;
         gap: 20;
-        width: 170px;
+        width: 90px;
         padding: 20px;
+        align-items: center;
       }
       img {
         width: 90px;
         height: auto;
         object-fit: cover;
+
+        @include mobile {
+          width: 70px;
+        }
       }
+
       p {
         @include mobile {
           display: none;
