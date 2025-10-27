@@ -48,6 +48,16 @@ const Technologies = [
     img: "./mongoDB.png",
     title: "mongoDB",
   },
+  {
+    id: "10",
+    img: "./csharp.png",
+    title: "C#",
+  },
+  {
+    id: "11",
+    img: "./.Net.jpeg",
+    title: ".NET",
+  },
 ];
 const varients = {
   initial: {

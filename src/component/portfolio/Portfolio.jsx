@@ -44,12 +44,12 @@ const items = [
     link: "https://expense-tracker-zpyt.onrender.com",
   },
   {
-    id: 6,
-    title: "social-plus",
+    id: 7,
+    title: "ValuEdge",
     description:
-      "this is a social app that allow you to add up your friend and keeps information about them ",
-    img: "./social-plus.png",
-    link: "https://socialplusclass.onrender.com",
+      "this is a Finacial modelling app that helps investors check market trends and make informed decisions",
+    img: "./ValuEdge.png",
+    link: "https://valuedge.onrender.com",
   },
 ];
 
